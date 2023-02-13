@@ -3,9 +3,14 @@ const { clean } = require("../clean");
 
 const display = (icon) => {
   const { game, name, category } = icon;
-  const icon_name = `--${clean(game)}-${clean(category)}-${clean(name)}`;
+  const icon_name = `--${
+    clean(game) === "Common" ? "" : clean(game) + "-"
+  }${clean(category)}-${clean(name)}`;
   return `
-.${clean(game, true)}-${clean(category, true)}-${clean(name, true)} {
+.${game === "Common" ? "" : clean(game, true) + "-"}${clean(
+    category,
+    true
+  )}-${clean(name, true)} {
   background-image: var(${icon_name});
 }
 `;

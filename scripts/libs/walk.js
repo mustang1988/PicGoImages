@@ -2,6 +2,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const { urlencodeSVG } = require("./urlencodeSVG");
+
 const walk = (dir, game = null, category = null, sub_category = null) => {
   if (game === null) {
     game = path.basename(dir);
@@ -26,7 +28,10 @@ const walk = (dir, game = null, category = null, sub_category = null) => {
         sub_category, //: sub_category? sub_category.replace(/\s/g, ""): sub_category,
         file,
         name: path.basename(file).replace(path.extname(file), ""),
-        content: fs.readFileSync(file).toString("base64"),
+        content: urlencodeSVG(fs.readFileSync(file).toString("utf8")).replace(
+          /"/g,
+          "'"
+        ),
       };
       if (category) {
         results.push(val);

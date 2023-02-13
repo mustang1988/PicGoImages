@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "gen": "node scripts/cli/gen-css.js"
+    "gen-css": "node scripts/cli/gen-css.js",
+    "gen-adm": "node scripts/cli/gen-adm.js Common"
   },
   "repository": {
     "type": "git",

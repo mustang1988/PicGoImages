@@ -18,12 +18,8 @@ const images = _.groupBy(walk(root(name)), "category");
 const template = `:root {
     [icons]
 }
-
 [icon_in_link]
-
-[icon_in_display]
-
-`;
+[icon_in_display]`;
 let icons_css = "";
 let icon_in_link = "";
 let icon_in_display = "";
