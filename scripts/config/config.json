@@ -1,0 +1,10 @@
+{
+  "scan_white_list": ["md", "LICENSE"],
+  "game_titles": [
+    "Cold Steel",
+    "Cold Steel II",
+    "Cold Steel III",
+    "Cold Steel IV",
+    "Trails into Reverie"
+  ]
+}

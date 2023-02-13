@@ -1,0 +1,25 @@
+{
+  "name": "picgoimages",
+  "version": "1.0.0",
+  "description": "Image repo for PicGo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustang1988/PicGoImages.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mustang1988/PicGoImages/issues"
+  },
+  "homepage": "https://github.com/mustang1988/PicGoImages#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "loadsh": "^0.0.4",
+    "mocha": "^10.2.0"
+  }
+}
