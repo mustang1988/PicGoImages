@@ -4,7 +4,8 @@
   "description": "Image repo for PicGo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "gen": "node scripts/cli/gen-css.js"
   },
   "repository": {
     "type": "git",
