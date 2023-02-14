@@ -37,4 +37,11 @@ const color = (icon) => {
   return color_map.Default;
 };
 
+const hex = (color) => {
+  const [r, g, b] = color.split(",").map((c) => c.trim().toString(16));
+  return `#${r}${g}${b}`;
+};
+
 module.exports.color = color;
+module.exports.colorMap = color_map;
+module.exports.hex = hex;

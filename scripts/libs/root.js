@@ -16,12 +16,4 @@ const root = (title) => {
   throw new Error(`Invalid Name: ${title}`);
 };
 
-// const common = () => {
-//   const root = join(process.env.ROOT, "Game", "Legend of Heroes", "Common");
-//   if (existsSync(root)) {
-//     return root;
-//   }
-// };
-
 module.exports.root = root;
-// module.exports.common = common;
