@@ -3,10 +3,10 @@ const { clean } = require("../clean");
 
 const root = (icon) => {
   const { game, name, category, content } = icon;
-  const icon_name = `--${game === "Common" ? "" : clean(game) + "-"}${clean(
+  const icon_name = `--${clean(
     category
   )}-${clean(name)}`;
-  return `${icon_name}: url("data:image/svg+xml,${content}")
+  return `${icon_name}: url("data:image/svg+xml,${content}");
 `;
 };
 

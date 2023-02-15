@@ -5,7 +5,7 @@ const { color, colorMap, hex } = require("../color");
 
 const link = (icon) => {
   const { game, name, category } = icon;
-  const icon_name = `--${clean(game)}-${clean(category)}-${clean(name)}`;
+  const icon_name = `--${clean(category)}-${clean(name)}`;
   const path_prefix = prefix(category);
   const data_path_selector = path_prefix
     ? `[data-link-path^="${path_prefix}"]`
